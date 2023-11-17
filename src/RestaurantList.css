@@ -1,0 +1,22 @@
+  .App {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .restaurant-list__header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .restaurant-list__list {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 40px;
+    
+  }
+  
+  .restaurant-list__item h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
