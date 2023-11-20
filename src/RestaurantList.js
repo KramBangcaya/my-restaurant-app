@@ -31,9 +31,9 @@ const RestaurantList = () => {
     return (
         <ul>
             {Object.entries(groupRestaurantsByState()).map(([state, stateRestaurants]) => (
-                <div key={state}>
-                    <h2>{state}:</h2>
-                    <ul className="restaurant-list__list">
+                <div className="restaurant-list__section" key={state}>
+                    <h3 className="restaurant-list__section-header">{state}:</h3>
+                    <ul className="restaurant-list__section-list">
                         {stateRestaurants.map((restaurant) => (
                             <RestaurantItem key={restaurant.restaurant_name} restaurant={restaurant} />
                         ))}

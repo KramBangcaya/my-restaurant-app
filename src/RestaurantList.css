@@ -1,22 +1,66 @@
-  .App {
-    width: 500px;
-    margin: 0 auto;
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .restaurant-list {
+    width: 600px;
   }
-  
-  .restaurant-list__header {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+}
+
+.restaurant-list__header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.restaurant-list__body {
+  text-align: center;
+  display:flex;
+  padding-left:150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .restaurant-list__body {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .restaurant-list__list {
-    list-style-type: disc;
-    margin: 0;
-    padding-left: 40px;
-    
-  }
-  
-  .restaurant-list__item h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
+}
+
+.restaurant-list__section {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-list__section-header {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.restaurant-list__section-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.restaurant-list__section-item {
+  padding: 5px;
+}
+
+.restaurant-list__section-item-name {
+  font-size: 16px;
+  margin-bottom: 0;
+}
