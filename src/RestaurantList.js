@@ -6,7 +6,7 @@ const RestaurantList = () => {
     const [restaurants, setRestaurants] = useState([]);
 
     useEffect(() => {
-        axios.get('api/restaurants')
+        axios.get('https://nextjs-orpin-omega-98.vercel.app/api/restaurants')
             .then(response => response.data)
             .then(data => setRestaurants(data))
             .catch(error => {
